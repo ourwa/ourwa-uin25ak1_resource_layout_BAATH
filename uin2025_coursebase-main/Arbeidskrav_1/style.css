@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primarycolor: #2A324B;
+    --secondarycolor: #58699D;
+    --bgcolor: #E1E5EE;
+    --white: #fff;
+    --accentcolor: #FF6B6B;
+  
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat.woff2') format('woff2'),
+         url('fonts/montserrat.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primarycolor);
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: var(--primarycolor);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bgcolor);
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 0;
+    gap: 15px;
+}
+
+nav ul li button {
+    background-color: var(--primarycolor);
+    border: 2px solid var(--primarycolor);
+    border-radius: 8px;
+    padding: 20px 70px;
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li button:hover,
+nav ul li button:focus {
+    color: var(--primarycolor);
+    background-color: var(--white);
+    border-color: var(--accentcolor);
+    transform: scale(1.05);
+}
+
+main {
+    margin: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main article {
+    background-color: var(--white);
+    margin: 0 auto;
+    padding: 40px 60px;
+    height: auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+main article:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    
+}
+
+main article ul {
+    padding: 0;
+}
+
+main article ul li {
+    font-size: 1.5rem;
+    list-style-position: inside;
+    margin: 10px 0;
+    font-weight: 400;
+    
+}
+
+main article ul li a {
+    text-decoration: underline;
+    color: var(--secondarycolor);
+    transition: color 0.2s ease-in-out;
+    
+}
+
+main article ul li a:hover {
+    color: var(--accentcolor);
+}
